@@ -31,29 +31,5 @@
             </ul>
         </div>
     </div>
-    <div class="row black">
-        <div class="col-12">
-            <div class="text-center">
-                <img src="{{ asset('img/aom.png') }}" alt="logo brand" class="anim img-fluid">
-            </div>
-        </div>
-    </div>
-
-    <div id="jumbo" class="row">
-        <div class="col-12">
-            <h1 class="text-center">New Product</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In minima dolorum rem dolorem deserunt, soluta veniam eum quasi laudantium? Nesciunt, veritatis facere iure adipisci assumenda voluptas officia laboriosam quod ex.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-6">
-            <h3>Brand</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum similique eligendi odit quisquam? Ipsum distinctio nesciunt quam, accusamus eum tempore blanditiis delectus omnis quo quas sit natus in aperiam sequi?</p>
-        </div>
-        <div class="col-6">
-            <img src="{{ asset('img/basket.jpg') }}" alt="logo basket" class="img-fluid">
-        </div>
-    </div>
 </body>
 </html>

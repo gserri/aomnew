@@ -1,21 +1,40 @@
-.black {
-    background-color: #000;
-    color: #fff;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    color: aqua;
+/* Navbar Mod */
+
+.bg-dark {
+  background-color: #000000 !important;
 }
 
-#jumbo {
-    background-color: #F1F5F8;
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
 }
+
+a:hover {
+  color: #494949;
+}
+
+/* End Navbar */
+
+/* Home Page */
 
 .anim {
-    -webkit-animation: flicker-in-1 2s linear both;
-    animation: flicker-in-1 2s linear both;
-    }
-    @-webkit-keyframes anim {
+  -webkit-animation: flicker-in-1 2s linear both;
+  animation: flicker-in-1 2s linear both;
+}
+
+    @-webkit-keyframes flicker-in-1 {
       0% {
         opacity: 0;
       }
@@ -204,5 +223,71 @@ h1 {
       100% {
         opacity: 1;
       }
-    }
+}
+
+.blink-1 {
+	-webkit-animation: blink-1 0.6s  both;
+	        animation: blink-1 0.6s  both;
+}
+
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+#mark {
+  display: none;   
+}
+
+.myButton {
+	background-color:transparent;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 17px;
+	text-decoration:none;
+}
+.myButton:hover {
+  background-color:#ffffff;
+  color: #000000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
     
