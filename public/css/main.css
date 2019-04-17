@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+html, body {
+  height: 100vh;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
   color: #fff;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 /* Navbar Mod */
 
-.bg-dark {
-  background-color: #000000 !important;
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  text-decoration: none;
-  background-color: transparent;
-  font-size: 20px;
-}
-
-a:hover {
-  color: #494949;
+@media (min-width: 768px) {
+  .abs-center-x {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
 }
 
 /* End Navbar */
@@ -262,6 +267,7 @@ a:hover {
   display: none;   
 }
 
+
 .myButton {
 	background-color:transparent;
 	-moz-border-radius:15px;
@@ -277,17 +283,81 @@ a:hover {
 	padding:13px 17px;
 	text-decoration:none;
 }
+
+
 .myButton:hover {
   background-color:#ffffff;
   color: #000000;
 }
+
 .myButton:active {
 	position:relative;
 	top:1px;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
 
+a:hover {
+  background-color: white;
+  color: #000000;
+  text-decoration: none;
+}
 
+.mt-5, .my-5 {
+  margin-top: 4rem !important;
+}
 
+/* Products Section Header*/
 
-    
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
